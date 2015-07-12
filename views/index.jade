@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title IMDB exercise
+  body
+    form
+      label Insert the title of your movie
+      input#movie(type='text', name='title')
+      button#search_movie(type='submit', value='search') Search movie
+    div
+      p
+        | Year:
+        span#year
+      p
+        | Director:
+        span#director
+      img#poster(src='')
+    script(src='http://code.jquery.com/jquery-1.11.3.min.js')
+    script(type='text/javascript', src='javascript/main.js')
